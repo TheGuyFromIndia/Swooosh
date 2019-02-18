@@ -58,7 +58,7 @@
             android:id="@+id/gs" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="@+id/bg" android:textColor="@android:color/white"
-            android:textSize="18sp" android:fontFamily="@font/montserrat" android:background="@drawable/swooshbutton"
+            android:textSize="30sp" android:fontFamily="@font/montserrat" android:background="@drawable/swooshbutton"
             android:layout_marginBottom="8dp"/>
 
 </android.support.constraint.ConstraintLayout>
