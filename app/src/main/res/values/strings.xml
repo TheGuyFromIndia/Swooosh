@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Swoosh</string>
+    <string name="next">NEXT</string>
+    <string name="desired_league">Desired League</string>
+    <string name="mens">Mens</string>
+    <string name="womens">Womens</string>
+    <string name="co_ed">Co-ed</string>
+    <string name="background_img">background img</string>
+    <string name="desiredleague_selection">desiredleague selection</string>
+    <string name="_1">1</string>
+    <string name="go_all_in">GO ALL IN</string>
+    <string name="_2">2</string>
+    <string name="going_all_out">GOING ALL OUT</string>
+    <string name="find_a_team_in_our_city_and_dominate_your_league">FIND A TEAM IN OUR CITY AND DOMINATE YOUR LEAGUE
+    </string>
+    <string name="get_started">GET STARTED</string>
 </resources>
