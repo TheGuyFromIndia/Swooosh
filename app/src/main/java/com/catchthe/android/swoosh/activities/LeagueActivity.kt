@@ -1,15 +1,19 @@
-package com.catchthe.android.swoosh
+package com.catchthe.android.swoosh.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
+import com.catchthe.android.swoosh.R
+import com.catchthe.android.swoosh.model.Player
+import com.catchthe.android.swoosh.utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : AppCompatActivity() {
 
-    var selectedleague = ""
+
+    var player = Player("", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +25,7 @@ class LeagueActivity : AppCompatActivity() {
         womensB.isChecked = false
         coedb.isChecked = false
 
-        selectedleague = "mens"
+        player.league = "mens"
 
     }
 
@@ -30,7 +34,7 @@ class LeagueActivity : AppCompatActivity() {
         mensB.isChecked = false
         coedb.isChecked = false
 
-        selectedleague = "womens"
+        player.league = "womens"
 
     }
 
@@ -38,15 +42,15 @@ class LeagueActivity : AppCompatActivity() {
         womensB.isChecked = false
         mensB.isChecked = false
 
-        selectedleague = "co-eds"
+        player.league = "co-eds"
 
     }
 
 
     fun goToSkill(view: View) {
-        if (selectedleague != "") {
+        if (player.league != "") {
             val skillactivity = Intent(this, skillActivity::class.java)
-            skillactivity.putExtra(EXTRA_LEAGUE, selectedleague)
+            skillactivity.putExtra(EXTRA_PLAYER, player)
             startActivity(skillactivity)
         } else
             Toast.makeText(this, "SELECT THE LEAGUE", Toast.LENGTH_SHORT).show()
